@@ -46,6 +46,10 @@ public class ResourceDefine {
 		this.abbr = abbr;
 		this.code = code;
 		this.value = value;
+<<<<<<< HEAD
+=======
+		Log.i("!!!","1");
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 	}
 	
 	public static void deriveResourceDefine(Context context){
@@ -106,7 +110,11 @@ public class ResourceDefine {
 //			is.close();
 			
 			/*获取学科的名称*/
+<<<<<<< HEAD
 			
+=======
+			Log.i("!!!","2");
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 			InputStream is = context.getAssets().open("SubjectResource.xml");
 			Document doc = builder.parse(is);
 			Element root = doc.getDocumentElement();
@@ -172,7 +180,11 @@ public class ResourceDefine {
 			
 			
 			
+<<<<<<< HEAD
 			
+=======
+			Log.i("!!!","3");
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 			/*定义项目来源*/
 			is = context.getAssets().open("ProjectSourceResource.xml");
 			doc = builder.parse(is);
@@ -230,13 +242,21 @@ public class ResourceDefine {
 			
 			
 			
+<<<<<<< HEAD
 			
+=======
+			Log.i("!!!","4");
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 			/*定义项目类型*/
 			is = context.getAssets().open("ProjectTypeResource.xml");
 			doc = builder.parse(is);
 			root = doc.getDocumentElement();
 			links = root.getElementsByTagName("type");
 			defined_resource_proj_type_list = new ArrayList<Resource>();
+<<<<<<< HEAD
+=======
+			Log.i("!!!",""+defined_resource_proj_type_list);
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 			for(int i = 0;i < links.getLength();i++){
 				
 				Element node = (Element) links.item(i);

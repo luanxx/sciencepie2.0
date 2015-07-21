@@ -1,5 +1,6 @@
 package com.sciencepie.mm.activity;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -7,10 +8,16 @@ import com.sciencepie.mm.R;
 
 import android.app.Activity;
 import android.app.ListActivity;
+=======
+import com.sciencepie.mm.R;
+
+import android.app.Activity;
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+<<<<<<< HEAD
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -18,10 +25,15 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+=======
+import android.view.ViewGroup;
+import android.view.Window;
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 
 
 
 public class HelpActivity extends Activity{
+<<<<<<< HEAD
 	private	 TextView text_hot;
 	private TextView text_project;
 	private TextView text_document;
@@ -30,6 +42,9 @@ public class HelpActivity extends Activity{
 	private  ListView list_project;
 	private  ListView list_document;
 	private  ListView list_help;
+=======
+	
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 	@Override
 	public void onCreate( Bundle savedInstanceState)
 	{
@@ -37,6 +52,7 @@ public class HelpActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.fragment_help);
+<<<<<<< HEAD
          text_hot = (TextView)findViewById(R.id.text_hot);
          text_project = (TextView)findViewById(R.id.text_project);
          text_document = (TextView)findViewById(R.id.text_document);
@@ -240,4 +256,7 @@ public class HelpActivity extends Activity{
 			    }
 			}
 		   }
+=======
+	}
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 }

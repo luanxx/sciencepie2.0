@@ -11,8 +11,17 @@
         android:layout_height="wrap_content"
         android:scrollbars="none"
         android:layout_weight="3"
+<<<<<<< HEAD
         android:divider="@color/transparent"
         android:dividerHeight="0dip"
+=======
+        android:divider="@color/light_grey"
+        android:dividerHeight="1px"
+        android:paddingRight="1px"
+        android:paddingLeft="1px"
+        android:paddingBottom="1px"
+        android:background="@drawable/listitem_background"
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
     
         />
     <ListView
@@ -21,8 +30,18 @@
         android:layout_height="wrap_content"
         android:scrollbars="none"
         android:layout_weight="1"
+<<<<<<< HEAD
         android:divider="@color/transparent"
         android:dividerHeight="0dip"
+=======
+        android:divider="@color/light_grey"
+        android:dividerHeight="1px"
+        android:background="@drawable/listitem_background"
+        android:paddingRight="1px"
+        android:paddingLeft="1px"
+        android:paddingBottom="1px"
+    
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
          />
 
 </LinearLayout>

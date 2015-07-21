@@ -9,4 +9,8 @@
     <color name="tab_gray">#808080</color>
     <color name="white"> #ffffff</color> 
     <color name="black"> #000000</color> 
+<<<<<<< HEAD
+=======
+    <color name="light_grey"> #d0d0d0</color> 
+>>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 </resources>
