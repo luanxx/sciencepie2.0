@@ -46,10 +46,9 @@ public class ResourceDefine {
 		this.abbr = abbr;
 		this.code = code;
 		this.value = value;
-<<<<<<< HEAD
-=======
+
 		Log.i("!!!","1");
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 	}
 	
 	public static void deriveResourceDefine(Context context){
@@ -62,59 +61,9 @@ public class ResourceDefine {
 		DocumentBuilder builder;
 		try {
 			builder = factory.newDocumentBuilder();
-//			InputStream is = context.getAssets().open("ChinaAreaResource.xml");
-//			Document doc = builder.parse(is);
-//			Element root = doc.getDocumentElement();
-//			/*解析省市*/
-//			NodeList links = root.getElementsByTagName("province");
-//			for(int i = 0;i < links.getLength();i++)
-//			{
-//				Element link  = (Element) links.item(i);
-//				NodeList child_links = link.getChildNodes();
-//				String abbr = "";
-//				int code = 0;
-//				String value = "";
-//				for(int j = 0;j < child_links.getLength();j++)
-//				{
-//					Node node = child_links.item(j);//判断是否为元素类型
-//					if(node.getNodeType() == Node.ELEMENT_NODE){
-//						
-//						Element child_node = (Element)node;
-//
-//						if("abbr".equals(child_node.getNodeName())){
-//							abbr = child_node.getFirstChild().getNodeValue();
-//						}
-//						
-//						if("code".equals(child_node.getNodeName()))
-//						{
-//							code = Integer.parseInt(child_node.getFirstChild().getNodeValue());
-//						}
-//						
-//						if("value".equals(child_node.getNodeName()))
-//						{
-//							value = child_node.getFirstChild().getNodeValue();
-//						}
-//	
-//					}
-//				}
-//				
-//				
-//				ResourceDefine res_def = new ResourceDefine(abbr,code,value);
-//				defined_area_resource.add(res_def);
-//				//String abbr = link.getElementsByTagName("abbr").item(0).getFirstChild().getNodeValue();
-//				//int code = Integer.parseInt(link.getElementsByTagName("code").item(0).getFirstChild().getNodeValue());
-//				//String value = link.getElementsByTagName("value").item(0).getFirstChild().getNodeName();
-//
-//			}
-//			
-//			is.close();
-			
-			/*获取学科的名称*/
-<<<<<<< HEAD
-			
-=======
+
 			Log.i("!!!","2");
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 			InputStream is = context.getAssets().open("SubjectResource.xml");
 			Document doc = builder.parse(is);
 			Element root = doc.getDocumentElement();
@@ -176,15 +125,9 @@ public class ResourceDefine {
 			
 			
 			
-			
-			
-			
-			
-<<<<<<< HEAD
-			
-=======
+
 			Log.i("!!!","3");
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 			/*定义项目来源*/
 			is = context.getAssets().open("ProjectSourceResource.xml");
 			doc = builder.parse(is);
@@ -242,21 +185,18 @@ public class ResourceDefine {
 			
 			
 			
-<<<<<<< HEAD
-			
-=======
+
 			Log.i("!!!","4");
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 			/*定义项目类型*/
 			is = context.getAssets().open("ProjectTypeResource.xml");
 			doc = builder.parse(is);
 			root = doc.getDocumentElement();
 			links = root.getElementsByTagName("type");
 			defined_resource_proj_type_list = new ArrayList<Resource>();
-<<<<<<< HEAD
-=======
+
 			Log.i("!!!",""+defined_resource_proj_type_list);
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 			for(int i = 0;i < links.getLength();i++){
 				
 				Element node = (Element) links.item(i);

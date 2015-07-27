@@ -66,34 +66,23 @@ public class CommonPopMenuListAdapter extends BaseAdapter {
 			//iv.setImageResource(R.drawable.icon_green_point);
 			layout.addView(iv);
 			 //layout.setBackground(context.getResources().getDrawable(R.color.background_grey));
-<<<<<<< HEAD
+
 			layout.setBackgroundColor(context.getResources().getColor(R.color.background_grey));
-=======
-			layout.setBackgroundColor(context.getResources().getColor(R.color.white));
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 			 }
 		else
 		{
 			 //layout.setBackground(context.getResources().getDrawable(R.color.white));
-<<<<<<< HEAD
+
 			 layout.setBackgroundColor(context.getResources().getColor(R.color.white));
-=======
-			 layout.setBackgroundColor(context.getResources().getColor(R.color.background_grey));
-			// layout.setBackground(context.getResources().getDrawable(R.drawable.listitem_background));
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 		}
-	   
 	    layout.setGravity(Gravity.CENTER);
 		TextView tv = new TextView(context);
 		Resource res = res_list.get(position);
 		String item = res.getResName();
-<<<<<<< HEAD
-		tv.setText(item);
-		tv.setPadding(5, 10, 0, 10);
-		tv.setTextColor(Color.WHITE);
-		tv.setTextSize(15);
-		layout.addView(tv);
-=======
+
+
 		
 		tv.setText(item);
 		tv.setPadding(5, 10, 0, 10);
@@ -102,7 +91,7 @@ public class CommonPopMenuListAdapter extends BaseAdapter {
 		//tv.setBackgroundColor(R.drawable.listitem_background);
 		layout.addView(tv);
 		
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 		return layout;
 	}
 

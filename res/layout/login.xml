@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    > 
+   
+    
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent"   -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="@color/background_gray" -->
+<!--         android:gravity="center_vertical" -->
+<!--         > -->
+        
+        
+<!--         <ImageView -->
+<!--              android:id="@+id/image_back" -->
+<!--              android:layout_width="wrap_content"    -->
+<!--              android:layout_height="wrap_content" -->
+<!--              android:src = "@drawable/button_back" -->
+<!--              android:layout_alignParentLeft="ture" -->
+<!--              android:layout_marginTop="14dip" -->
+<!--              android:layout_marginLeft="10dip" -->
+<!--              android:layout_marginBottom="13dip" -->
+<!--              android:layout_marginRight="5dip" -->
+<!--        ></ImageView> -->
+       
+<!--        <TextView  -->
+<!--             android:id="+id/text_back" -->
+<!--             android:layout_width="wrap_content"    -->
+<!--             android:layout_height="wrap_content"  -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:text="返回" -->
+<!--             android:layout_toRightOf="@id/image_back" -->
+<!--               android:layout_marginTop="13dip" -->
+<!--              android:layout_marginBottom="13dip" -->
+<!--              android:layout_marginRight="10dip" -->
+<!--              android:textColor="@color/blue" -->
+            
+           
+<!--        ></TextView> -->
+       
+<!--       </RelativeLayout> -->
+   <include   android:id="@+id/top_back" layout="@layout/top_back" ></include>"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/image_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dip"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_face"
+            android:layout_marginLeft="54dip"
+            android:layout_marginTop="23dip"
+            android:text="账      号：" />
+
+        <EditText
+            android:id="@+id/account_number_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/account_number"
+            android:layout_marginRight="25dip"
+            android:layout_toRightOf="@id/account_number" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/account_number"
+            android:layout_below="@id/account_number"
+            android:layout_marginTop="25dip"
+            android:text="输入密码：" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/password"
+            android:layout_alignLeft="@id/account_number_edit"
+            android:layout_marginRight="25dip"
+            android:layout_below="@id/account_number_edit" />
+        <TextView
+            android:id="@+id/password_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/account_number"
+            android:layout_below="@id/password"
+            android:layout_marginTop="25dip"
+            android:text="密码确认：" />
+       <EditText
+            android:id="@+id/password_confirm_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/password_confirm"
+            android:layout_alignLeft="@id/account_number_edit"
+            android:layout_marginRight="25dip"
+            android:layout_below="@id/password_edit" /> 
+       <Button 
+            android:id="@+id/button_confirm"
+            android:layout_width="84dip"
+            android:layout_height="35dip"
+            android:background="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_below ="@id/password_confirm"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="40dip"
+            
+       ></Button>
+    </RelativeLayout>
+    <LinearLayout 
+     style="@style/LineHorizontalBar2"   
+        
+     ></LinearLayout>
+   <RelativeLayout 
+     android:layout_width="match_parent"  
+     android:layout_height="wrap_content"    
+  >
+        <TextView 
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"   
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_vertical"
+            android:text="第三方登陆"
+             android:layout_marginTop="20dip"
+             android:layout_marginLeft="23dip"
+             android:textColor="@color/text_gray"
+            
+           
+       ></TextView>
+        
+        <RadioGroup
+            android:id = "@+id/login_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            >
+            <RadioButton 
+             android:id="@+id/wechat"
+             android:layout_width="wrap_content"   
+             android:layout_height="wrap_content"   
+             android:drawableTop="@drawable/wechat"
+             android:button="@null"
+             android:drawableTop="@drawable/weixin"
+             android:text="微信"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="48dip"
+             android:layout_marginLeft="34dip"
+             
+                
+             />
+             <RadioButton 
+             android:id="@+id/QQ"
+             android:layout_width="wrap_content"   
+             android:layout_height="wrap_content"   
+             android:button="@null"
+             android:drawableTop="@drawable/QQ"
+             android:text="QQ"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="48dip"
+             android:layout_marginLeft="14dip"
+             
+                
+             />
+               <RadioButton 
+             android:id="@+id/sina"
+             android:layout_width="wrap_content"   
+             android:layout_height="wrap_content"   
+             android:button="@null"
+             android:drawableTop="@drawable/sina"
+             android:text="微博"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="48dip"
+             android:layout_marginLeft="14dip"
+             
+                
+             />
+          
+            
+        </RadioGroup>
+<!--             <TextView  -->
+<!--             android:id="@+id/text_wechat" -->
+<!--             android:layout_width="wrap_content"    -->
+<!--              android:layout_height="wrap_content"  -->
+<!--             android:text="微信" -->
+<!--             android:layout_below="@id/wechat" -->
+            
+<!--             /> -->
+       
+   </RelativeLayout>
+
+
+</LinearLayout>

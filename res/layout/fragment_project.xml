@@ -34,11 +34,10 @@
           android:layout_height="35dip"
           android:layout_weight="1"
           android:gravity="center"
-<<<<<<< HEAD
+
           android:background="@color/background_grey">
-=======
-          android:background="@drawable/listitem_background">
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
+
           
           <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -60,29 +59,18 @@
               android:paddingBottom="5dip"
               android:layout_marginLeft="5dip"
               android:id="@+id/proj_src_arrow"/>
-<<<<<<< HEAD
+
       </LinearLayout>
-       <LinearLayout 
-      android:layout_width="0.5dip"
-      android:layout_height="match_parent"
-     android:background="#888888"
-     
-     ></LinearLayout>  
-=======
-          
-      </LinearLayout>
- 
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+       
+
+
+
       <LinearLayout android:id="@+id/proj_type_layout"
           android:layout_width="match_parent"
           android:layout_height="35dip"
           android:layout_weight="1"
           android:gravity="center"
-<<<<<<< HEAD
           android:background="@color/background_grey">
-=======
-          android:background="@drawable/listitem_background">
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
           
           <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -102,26 +90,11 @@
               android:paddingTop = "5dip"
               android:paddingBottom="5dip"
               android:id="@+id/proj_type_arrow"/>
-<<<<<<< HEAD
-=======
-          
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
       </LinearLayout>
       
-      
-  </LinearLayout>
-<<<<<<< HEAD
- 
-   <LinearLayout 
-      android:layout_width="match_parent"
-      android:layout_height="0.5dp"
-     android:background="#888888"
-     android:layout_marginTop="35dip"
-     ></LinearLayout>  
-=======
+</LinearLayout>
 
-   
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 
     </RelativeLayout>   
       

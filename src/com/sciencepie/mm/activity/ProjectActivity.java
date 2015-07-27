@@ -14,6 +14,7 @@ import com.sciencepie.mm.util.ResourceDefine;
 
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -45,6 +46,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+@SuppressLint("NewApi")
 public class ProjectActivity extends FragmentActivity {
 	
 
@@ -99,62 +101,14 @@ public class ProjectActivity extends FragmentActivity {
 		main=(LinearLayout)inflater.inflate(R.layout.fragment_project, null); 
 		
 		setContentView(main);
-<<<<<<< HEAD
-		//initVariable();
-		//initView();
-=======
 		initVariable();
 		initView();
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 
 	}
 	
 
 	
     
-<<<<<<< HEAD
-//    private void initVariable(){
-//        DataCache.cache.clear();
-//        proj_src_all_list = ResourceDefine.defined_resource_proj_src_list;
-//        proj_type_list = ResourceDefine.defined_resource_proj_type_list;
-//        proj_src_first_list_adapter = new CommonPopMenuListAdapter(this,proj_src_all_list);
-//        proj_type_list_adapter = new CommonPopMenuListAdapter(this,proj_type_list);
-//   
-//        proj_src1 = -1;
-//        proj_src2 = -1;
-//        proj_type = proj_type_list.get(0).getResId();
-//        /*设置select_view被移除的状态*/
-//        removed = false;
-//        frag_saved_data = new ArrayList<List<Map<String,Object>>>();
-//        frag_saved_data.add(new ArrayList<Map<String,Object>>());
-//        frag_saved_data.add(new ArrayList<Map<String,Object>>());
-//    }
-//    
-//    
-//    
-//
-//	private void initView()
-//	{
-//
-//		initPopMenuView();
-//		proj_select_view = main.findViewById(R.id.proj_select_layout);
-//		proj_main_layout = (RelativeLayout) main.findViewById(R.id.proj_main_layout);
-//		/*-1表示全部,null也默认表示全部*/
-//	   // proj_fragment_hot = new MainProjectApplyFragment(PROJ_HOT,DefaultUtil.INAVAILABLE,-1,-1,-1,DefaultUtil.EMPTY,frag_saved_data.get(0));//热点项目
-//	    //proj_fragment_expire = new ProjectApplyFragment(PROJ_EXPIRE,proj_src_all_list.get(0).getResId(),-1,-1,-1,DefaultUtil.EMPTY,frag_saved_data.get(1)); //即将到期
-//		
-//		proj_src_text = (TextView) findViewById(R.id.proj_src_text);
-//		proj_type_text = (TextView) findViewById(R.id.proj_type_text);
-//		
-//		proj_view_pager = (ViewPager) findViewById(R.id.proj_view_pager);
-//		proj_view_pager.setAdapter(proj_fragment_adapter);
-//		proj_view_pager.setCurrentItem(0);
-//		
-//		
-//		
-//		
-//	}
-=======
     private void initVariable(){
         DataCache.cache.clear();
         proj_src_all_list = ResourceDefine.defined_resource_proj_src_list;
@@ -197,7 +151,6 @@ public class ProjectActivity extends FragmentActivity {
 		
 		
 	}
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
 	
 
 	
@@ -222,6 +175,7 @@ public class ProjectActivity extends FragmentActivity {
     
     
     
+	@SuppressLint("NewApi")
 	public void initPopMenuView(){
 		
         WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);

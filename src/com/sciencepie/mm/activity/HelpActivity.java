@@ -1,6 +1,6 @@
 package com.sciencepie.mm.activity;
 
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -8,16 +8,14 @@ import com.sciencepie.mm.R;
 
 import android.app.Activity;
 import android.app.ListActivity;
-=======
-import com.sciencepie.mm.R;
 
-import android.app.Activity;
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-<<<<<<< HEAD
+
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -25,15 +23,12 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-=======
-import android.view.ViewGroup;
-import android.view.Window;
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 
 
 
 public class HelpActivity extends Activity{
-<<<<<<< HEAD
+
 	private	 TextView text_hot;
 	private TextView text_project;
 	private TextView text_document;
@@ -42,9 +37,7 @@ public class HelpActivity extends Activity{
 	private  ListView list_project;
 	private  ListView list_document;
 	private  ListView list_help;
-=======
-	
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
 	@Override
 	public void onCreate( Bundle savedInstanceState)
 	{
@@ -52,7 +45,7 @@ public class HelpActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.fragment_help);
-<<<<<<< HEAD
+
          text_hot = (TextView)findViewById(R.id.text_hot);
          text_project = (TextView)findViewById(R.id.text_project);
          text_document = (TextView)findViewById(R.id.text_document);
@@ -137,8 +130,7 @@ public class HelpActivity extends Activity{
 			text=(String) text_hot.getText();
 		    if (text=="- 热门讨论区")
 			{
-		    	text_hot.setText("+ 热门讨论区");
-		    	list_hot.setVisibility(View.GONE);
+		  
 		    	
 		    }
 		    else
@@ -171,8 +163,7 @@ public class HelpActivity extends Activity{
 				text=(String) text_project.getText();
 			    if (text=="- 项目申报讨论区")
 				{
-			    	text_project.setText("+ 项目申报讨论区");
-			    	list_project.setVisibility(View.GONE);
+			    
 			    	
 			    }
 			    else
@@ -205,8 +196,7 @@ public class HelpActivity extends Activity{
 				text=(String) text_document.getText();
 			    if (text=="- 文献速递讨论区")
 				{
-			    	text_document.setText("+ 文献速递讨论区");
-			    	list_document.setVisibility(View.GONE);
+			    
 			    	
 			    }
 			    else
@@ -239,8 +229,7 @@ public class HelpActivity extends Activity{
 				text=(String) text_help.getText();
 			    if (text=="- 互助讨论区")
 				{
-			    	text_help.setText("+ 互助讨论区");
-			    	list_help.setVisibility(View.GONE);
+			    	
 			    	
 			    }
 			    else
@@ -256,7 +245,6 @@ public class HelpActivity extends Activity{
 			    }
 			}
 		   }
-=======
+
 	}
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
-}
+

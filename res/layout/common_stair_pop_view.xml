@@ -10,11 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-<<<<<<< HEAD
-        android:divider="@color/transparent"
-        android:dividerHeight="0dip"
-        android:layout_alignParentRight="true"
-=======
+
+
         android:divider="@color/light_grey"
         android:dividerHeight="1px"
         android:background="@drawable/listitem_background"
@@ -22,9 +19,7 @@
         android:paddingLeft="1px"
         android:paddingBottom="1px"
         android:layout_alignParentRight="true"
-        
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
-        />
 
+     />
 
 </RelativeLayout>

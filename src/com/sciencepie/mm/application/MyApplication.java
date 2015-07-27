@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //package com.sciencepie.mm.application;
 //
 //import java.io.IOException;
@@ -546,7 +546,7 @@
 //	
 //	
 //}
-=======
+
 package com.sciencepie.mm.application;
 
 import java.io.IOException;
@@ -649,4 +649,4 @@ public class MyApplication extends Application{
 	
 	
 }
->>>>>>> d1ad3f11477eaceac83626f44825046d2fbec0c6
+
